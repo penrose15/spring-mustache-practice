@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>shopping</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<h1>물품 등록</h1>
+
+<div class="col-md-12">
+    <div class="col-md-4">
+        <form>
+            <div class="form-group">
+                <label for="name">물품 이름</label>
+                <input type="text" class="form-control" id="name" placeholder="물품 이름을 등록하세요">
+            </div>
+            <div class="form-group">
+                <label for="price">가격</label>
+                <input type="text" class="form-control" id="price" placeholder="가격을 입력하세요">
+            </div>
+            <div class="form-group">
+                <label for="quantity">개수</label>
+                <input type="text" class="form-control" id="quantity" placeholder="수량을 입력하세요">
+            </div>
+        </form>
+        <a href="/" role="button" class="btn btn-secondary">취소</a>
+        <button type="button" class="btn btn-primary" id="btn-save">등록</button>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src ="/js/app/save.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>shopping</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<h1>물품 등록</h1>
+
+<div class="col-md-12">
+    <div class="col-md-4">
+        <form>
+            <div class="form-group" style="visibility: hidden;">
+                <input type="text" class="form-control" id="id" value="{{stock.id}}" readonly>
+            </div>
+            <div class="form-group">
+                <label for="name">물품 이름</label>
+                <input type="text" class="form-control" id="name" value="{{stock.name}}">
+            </div>
+            <div class="form-group">
+                <label for="price">가격</label>
+                <input type="text" class="form-control" id="price" value="{{stock.price}}" >
+            </div>
+            <div class="form-group">
+                <label for="quantity">개수</label>
+                <input type="text" class="form-control" id="quantity" value="{{stock.quantity}}">
+            </div>
+        </form>
+        <a href="/" role="button" class="btn btn-secondary">취소</a>
+        <button type="button" class="btn btn-primary" id="btn-update">수정</button>
+        <button type="button" class="btn btn-primary" id="btn-update">삭제</button>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src ="/js/app/update.js"></script>
+
+</body>
+</html>
